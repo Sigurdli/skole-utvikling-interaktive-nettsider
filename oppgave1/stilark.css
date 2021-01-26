@@ -1,0 +1,173 @@
+/* ------- body ------- */
+body {
+    background-image: url(?);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 20% 0.5fr;
+    grid-template-rows: 0.2fr 0.09fr auto 1fr;
+    grid-template-areas:
+        "nav nav nav nav"
+        "main main main main";
+    grid-gap: 6px;
+}
+
+/* ------- grid container ------- */
+.grid-container {
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    grid-template-columns: 4;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    justify-content: center;
+}
+
+.nav {
+    grid-column: 2 / span 4;
+    grid-row: 2;
+}
+
+.main {
+    grid-column: 2 / span 4;
+    grid-row: 3;
+}
+
+/* ------- navigation bar ------- */
+nav {
+    width: 100%;
+}
+
+nav a {
+    list-style: none;
+    text-decoration: none;
+    margin: 3px;
+    padding: 3px;
+    width: 10%;
+    background-color: rgb(250, 250, 250);
+
+}
+
+.leftnav {
+    float: left;
+}
+
+.rightnav {
+    float: right;
+}
+
+
+/* ------- main ------- */
+main {
+    width: 100%;
+    padding: 0 auto;
+    flex-grow: 1
+}
+
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+
+
+    position: relative;
+    text-align: center;
+    justify-content: center;
+
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.boks1 {
+    border: solid 2px rgba(31, 31, 31, 0.11);
+    height: 20%;
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+form {
+    width: 70% auto;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.submit {
+    text-align: center;
+    float: right;
+    width: 70px;
+    background-color: rgb(86, 212, 194);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 6px;
+}
+
+.content {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #999999;
+    padding: 5px;
+}
+
+.title {
+    width: 30%;
+    height: 20px;
+    border: 1px solid #999999;
+    padding: 5px;
+}
+
+.complete {
+    text-align: right;
+    float: right;
+    margin: 7px;
+    background-color: rgb(86, 212, 194);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 6px;
+}
+
+h2 {
+    padding: 5px;
+    float: left;
+    clear: both;
+    font-size: 20px;
+    white-space: nowrap;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+h4 {
+    padding: auto;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+p {
+    margin: 10px;
+    clear: both;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+@media (max-width: 800px) {
+    article {
+        flex-basis: 80%;
+    }
+}
+
+@media (min-width: 801px) {
+    article {
+        flex-basis: 25%;
+    }
+}
